@@ -60,6 +60,16 @@ header li {
     bottom: 0;
     width: 100%;
 }
+
+.section p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.section.active p {
+    max-height: 1000px; /* Значение должно быть достаточно большим для контента */
+}
 .hidden {
     display: none;
 }
