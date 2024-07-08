@@ -1,22 +1,88 @@
 /* styles.css */
 
-/* Добавляем тень и изменяем цвета блоков при наведении */
-.content section:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    background-color: #f9f9f9;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #15202b; /* Темно-синий фон */
+    color: #ffffff; /* Белый текст */
 }
 
-/* Анимируем изменение размера заголовков */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1f2937; /* Темно-синий блок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #3498db; /* Цвет границы */
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Добавлен отступ снизу */
+}
+
+.header h1 {
+    margin: 0;
+    color: #3498db; /* Цвет заголовка */
+}
+
+.header h2 {
+    margin: 10px 0 0;
+    font-weight: normal;
+    color: #9fb3c8; /* Цвет подзаголовка */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Распределение блоков по краям */
+}
+
+.summary, .experience, .skills {
+    flex-basis: calc(33.33% - 10px); /* Ширина блоков, с учетом промежутков */
+    margin-bottom: 20px; /* Отступ между блоками */
+}
+
+.summary {
+    text-align: center; /* Выравнивание по центру */
+}
+
+.skills {
+    order: -1; /* Помещаем блок Skills в начало */
+}
+
+.content section {
+    padding: 20px;
+    background-color: #2c3e50; /* Цвет блоков */
+    border-radius: 5px;
+}
+
 .content h3, .content h4 {
-    transition: font-size 0.3s ease;
+    color: #3498db; /* Цвет заголовков секций */
 }
 
-/* Заголовки могут увеличиваться на 20% от обычного размера */
-.content section:hover h3 {
-    font-size: 120%;
+.content p, .content ul {
+    color: #ffffff; /* Белый текст */
 }
 
-.content section:hover h4 {
-    font-size: 110%;
+footer {
+    margin-top: 20px; /* Отступ сверху */
+    text-align: center;
+}
+
+footer .contact {
+    background-color: #1f2937; /* Цвет фона блока контактов */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .contact h3 {
+    color: #3498db; /* Цвет заголовка */
+}
+
+footer .contact p {
+    color: #ffffff; /* Белый текст */
 }
