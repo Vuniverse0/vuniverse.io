@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Анна",
+      "age": 20,
+      "grades": {
+        "math": 95,
+        "science": 88,
+        "literature": 92
+      }
+    },
+    {
+      "id": 2,
+      "name": "Олег",
+      "age": 21,
+      "grades": {
+        "math": 78,
+        "science": 85,
+        "literature": 80
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ірина",
+      "age": 22,
+      "grades": {
+        "math": 88,
+        "science": 90,
+        "literature": 85
+      }
+    },
+    {
+      "id": 4,
+      "name": "Максим",
+      "age": 23,
+      "grades": {
+        "math": 82,
+        "science": 78,
+        "literature": 75
+      }
+    },
+    {
+      "id": 5,
+      "name": "Катерина",
+      "age": 19,
+      "grades": {
+        "math": 90,
+        "science": 92,
+        "literature": 88
+      }
+    },
+    {
+      "id": 6,
+      "name": "Дмитро",
+      "age": 20,
+      "grades": {
+        "math": 85,
+        "science": 80,
+        "literature": 87
+      }
+    }
+  ],
+  "course": {
+    "name": "Програмування",
+    "duration": "6 місяців",
+    "start_date": "2024-01-15",
+    "end_date": "2024-07-15"
+  }
+}
